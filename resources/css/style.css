@@ -3,12 +3,17 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  align-items: center;
+  align-content: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  flex-wrap: nowrap;
 }
 
 div {
   border: 1px solid black;
 }
+
 .logo {
   color: MediumAquamarine;
   width: 700px;
@@ -19,16 +24,23 @@ div {
 .logo img {
   margin-right: 12px;
 }
+
+.navigation {
+  justify-content: space-around;
+}
+
 .main-content {
   display: flex;
   padding-top: 116px;
 }
 
 .column {
+  display: flex;
   margin-right: 32px;
 }
 .column.large {
   width: 630px;
+  flex-flow: row wrap;
 
 }
 
@@ -40,10 +52,14 @@ div {
   width: 240px;
 }
 
-.lead-image-content {
+.lead-story {
+  justify-content: center;
+  min-width: 630px;
+}
+
+.lead-story .image-content {
   background-image: url("../img-story-main.png");
   height: 300px;
-  width: 100%;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -57,25 +73,26 @@ div {
   color: white;
 }
 
+.story {
+  display: block;
+}
 .story p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
 
-.image-content .earth {
-  background-image: url("../img-story-1.png");
+.stories .image-content {
   height: 300px;
-  width: 100%;
 }
 
-.image-content .cameras {
+.stories .image-content .earth {
+  background-image: url("../img-story-1.png");
+}
+
+.stories .image-content .cameras {
   background-image: url("../img-story-2.png");
-  height: 300px;
-  width: 100%;
 }
 .image-content .cat-title {
   background-image: url("../img-story-3.png");
-  height: 300px;
-  width: 100%;
 }
