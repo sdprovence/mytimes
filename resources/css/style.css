@@ -3,6 +3,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  align-items: center;
 }
 
 div {
@@ -10,13 +11,25 @@ div {
 }
 .logo {
   color: MediumAquamarine;
+  width: 700px;
+  padding-left: 30px;
+
 }
 
+.logo img {
+  margin-right: 12px;
+}
 .main-content {
   display: flex;
+  padding-top: 116px;
+}
+
+.column {
+  margin-right: 32px;
 }
 .column.large {
   width: 630px;
+
 }
 
 .column.medium {
@@ -25,4 +38,44 @@ div {
 
 .column.small {
   width: 240px;
+}
+
+.lead-image-content {
+  background-image: url("../img-story-main.png");
+  height: 300px;
+  width: 100%;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story .image-content {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.image-content .earth {
+  background-image: url("../img-story-1.png");
+  height: 300px;
+  width: 100%;
+}
+
+.image-content .cameras {
+  background-image: url("../img-story-2.png");
+  height: 300px;
+  width: 100%;
+}
+.image-content .cat-title {
+  background-image: url("../img-story-3.png");
+  height: 300px;
+  width: 100%;
 }
