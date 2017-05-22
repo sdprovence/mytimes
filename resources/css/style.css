@@ -3,11 +3,21 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  align-content: center;
   position: fixed;
+  height: 80px;
   width: 100%;
   background-color: white;
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a {
+  color: black;
 }
 
 div {
@@ -15,13 +25,17 @@ div {
 }
 
 .logo {
+  display: flex;
   color: MediumAquamarine;
-  width: 700px;
   padding-left: 30px;
+  align-items: center;
+  flex-grow: 1;
 
 }
 
 .logo img {
+  width: 70px;
+  height: 60px;
   margin-right: 12px;
 }
 
@@ -32,12 +46,13 @@ div {
 .main-content {
   display: flex;
   padding-top: 116px;
+  width: 1266;
 }
 
 .column {
   display: flex;
   margin-right: 32px;
-}
+  }
 .column.large {
   width: 630px;
   flex-flow: row wrap;
@@ -46,53 +61,79 @@ div {
 
 .column.medium {
   width: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+
 }
 
 .column.small {
   width: 240px;
+  flex-direction: column;
 }
 
-.lead-story {
-  justify-content: center;
-  min-width: 630px;
+/*
+.column.small .cookie-image {
+  max-width: inherit;
 }
+*/
+
+.lead-story.story {
+  display: inline-block;
+  }
+
+
 
 .lead-story .image-content {
   background-image: url("../img-story-main.png");
   height: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+  min-width: 630px;
+
 }
 
-.story .image-content {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
+.lead-story.story .image-content span {
+  font-size: 40px;
 
-.story {
-  display: block;
 }
-.story p {
+.story,
+.news-bites {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+
+}
+.story span {
+  }
+
+
+.story .image-content span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 
-.stories .image-content {
-  height: 300px;
+
+.story .image-content {
+
 }
 
-.stories .image-content .earth {
-  background-image: url("../img-story-1.png");
+.stories {
+  display: flex;
 }
 
-.stories .image-content .cameras {
+.orca.story .image-content {
   background-image: url("../img-story-2.png");
+  height: 300px;
+  text-align: center;
 }
-.image-content .cat-title {
+
+.burger.story .image-content {
   background-image: url("../img-story-3.png");
+  height: 300px;
+  text-align: center;
+}
+.cats-in-control.story .image-content {
+  background-image: url("../img-story-1.png");
+  height: 300px;
+  text-align: center;
 }
